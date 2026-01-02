@@ -31,13 +31,13 @@ def open_track(uid):
 def channel():
     uid = request.args.get('uid', 'unknown')
     track_click(uid, 'channel')
-    return redirect("https://t.me/ТВОЙ_КАНАЛ")  # Замени!
+    return redirect("https://t.me/dnevnilspekulanta")  # Замени!
 
 @app.route('/contact')
 def contact():
     uid = request.args.get('uid', 'unknown')
     track_click(uid, 'contact')
-    return redirect("https://t.me/ТВОЙ_ПРОФИЛЬ")  # Замени!
+    return redirect("https://t.me/voroncov1249")  # Замени!
 
 def track_click(uid, ctype):
     ip = request.remote_addr
